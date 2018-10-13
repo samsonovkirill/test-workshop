@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 import program from 'commander';
-import getForecast from '../index';
+import getForecast from '..';
 
 program
   .version('0.0.1')
