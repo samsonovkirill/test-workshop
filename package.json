@@ -1,7 +1,7 @@
 {
-  "name": "gendiff-package",
-  "version": "1.0.3",
-  "description": "Compares two configuration files and outputs a difference.",
+  "name": "workshop-test",
+  "version": "0.0.1",
+  "description": "Workshop tests",
   "main": "index.js",
   "scripts": {
     "babel-node": "babel-node",
@@ -11,50 +11,44 @@
     "test": "jest",
     "watch": "jest --watch"
   },
+  "jest": {
+    "testEnvironment": "node"
+  },
   "repository": {
     "type": "git",
-    "url": "https://github.com/samsonovkirill/project-lvl2-s281"
+    "url": "https://github.com/samsonovkirill/test-workshop"
   },
-  "keywords": [
-    "gendiff",
-    "configuration",
-    "difference",
-    "compare",
-    "json",
-    "ini",
-    "yaml",
-    "yml",
-    "diff"
-  ],
   "author": "Kirill Samsonov",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/samsonovkirill/project-lvl2-s281/issues"
+    "url": "https://github.com/samsonovkirill/test-workshop/issues"
   },
-  "homepage": "https://github.com/samsonovkirill/project-lvl2-s281#readme",
+  "homepage": "https://github.com/samsonovkirill/test-workshop#readme",
   "dependencies": {
+    "axios": "^0.18.0",
     "commander": "^2.15.1",
-    "ini": "^1.3.5",
-    "js-yaml": "^3.12.0",
-    "lodash": "^4.17.10"
+    "lodash": "^4.17.10",
+    "nock": "^10.0.1"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
     "babel-core": "^6.26.3",
     "babel-eslint": "*",
     "babel-jest": "^23.2.0",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-polyfill": "^6.26.0",
     "babel-preset-env": "*",
+    "babel-preset-es2015": "^6.24.1",
     "babel-preset-stage-0": "*",
     "eslint": "^5.0.1",
     "eslint-config-airbnb-base": "^13.0.0",
     "eslint-plugin-babel": "^5.1.0",
     "eslint-plugin-import": "^2.13.0",
     "eslint-plugin-jest": "^21.17.0",
-    "jest": "^23.2.0",
-    "regenerator-runtime": "^0.12.0"
+    "jest": "^23.2.0"
   },
   "bin": {
-    "gendiff": "dist/bin/gendiff.js"
+    "tests": "dist/bin/tests.js"
   },
   "files": [
     "dist"
